@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f4f4f4;
+		background: linear-gradient(to bottom, rgb(228, 215, 215),rgb(196, 202, 185) );
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -221,6 +221,12 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.1em;
+	}
+	.h2-about{
+		
+			font-size: 1.1em;
+			font-weight: 650;
+			color: #2ebaae;
 	}
 
 	h3 {
@@ -2588,6 +2594,7 @@ input, select, textarea {
 				ul.posts article header h3 {
 					font-size: 0.7em;
 					margin-top: 0.125em;
+					color: violet;
 				}
 
 				ul.posts article header .published {
@@ -2742,6 +2749,8 @@ input, select, textarea {
 				flex-grow: 1;
 				-ms-flex: 1;
 				padding: 3.75em 3em 3.3em 3em;
+				text-align: center;
+				color: rgb(60, 60, 116);
 			}
 
 				.post > header .title h2 {
@@ -2779,6 +2788,12 @@ input, select, textarea {
 					margin-top: 0.5em;
 					text-transform: uppercase;
 					white-space: nowrap;
+				}
+				.post > header .meta .published:hover {
+					transform: skewX(50%);
+					transform: translate(-30%, 40%);
+					transition: 1s all;
+					font-size: 1rem;
 				}
 
 		.post > a.image.featured {
